@@ -2,7 +2,7 @@
 ### beego结合nginx实现LDAP认证登录
 
    框架： beego 参考： [nginxinc](https://github.com/nginxinc/ldap_auth_nginx/blob/master/backend-sample-app.py)
-   
+
 #### 基本思路
 
 - 存储：cookie存储base64后的用户密码、原始url
@@ -149,3 +149,7 @@ func assignConfig(ac config.Configer) error {
     ...
 }
 ```
+
+#### 有个问题
+ 
+- 在表单页要点击两下才能成功跳转，我不清楚原因，如果有人知道可以教我下,感谢.
